@@ -29,12 +29,12 @@ grunt.initConfig({
   'sass-multi-import': {
     your_target: {
       // Target-specific file lists and/or options go here.
-      files: {
-        // The file pattern to add @imports to.
-        // The name of the file is arbitrary - I like "all".
-        src: ['path/to/scss/files/**/_all.scss']
-    },
-  },
+      files: [{
+        src: ['src/styles/partials/**/*'],
+        dest: 'src/styles/_partials.scss'
+      }]
+    }
+  }
 })
 ```
 
