@@ -1,7 +1,7 @@
 {
   "name": "grunt-sass-multi-import",
   "description": "Combine multiple .scss files into one dynamically maintained .scss file.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/Jandalf/grunt-sass-multi-import",
   "author": "Jandalf",
   "repository": "git://github.com/Jandalf/grunt-sass-multi-import.git",
