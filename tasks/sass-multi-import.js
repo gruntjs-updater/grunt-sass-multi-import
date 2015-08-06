@@ -47,7 +47,7 @@ module.exports = function(grunt) {
 
 				var includeDir = path.relative(path.dirname(dest), path.dirname(file)), // make path relative
 					includeFile = fileName.replace('.scss', '').substring(1), // remove .scss extension and initial underscore
-					includePath = path.join(includeDir, includeFile),
+					includePath = path.join(includeDir, includeFile).replace(/\\/g,'/'),
 					quotes = (options.quotes === 'single') ? '\'' : '"';
 
 				grunt.verbose.writeln('Importing ' + includePath.cyan);
